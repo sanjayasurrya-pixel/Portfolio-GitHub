@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio Sanjaya Surya Pradana — Frontend Developer, Lulusan SMKN 1 Kepanjen Jurusan RPL">
+  <title>Sanjaya Surya Pradana — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <noscript>
+    <style>.reveal { opacity: 1 !important; transform: none !important; }</style>
+  </noscript>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <i class="orb orb-a"></i>
+    <i class="orb orb-b"></i>
+    <i class="beam"></i>
+    <i class="glass"></i>
+  </div>
+  <header class="site-bar">
+    <div class="container bar-inner">
+      <nav class="bar-nav" aria-label="Navigasi utama">
+        <a href="#home" class="bar-link is-active">Home</a>
+        <a href="#about" class="bar-link">About</a>
+        <a href="#portfolio" class="bar-link">Portfolio</a>
+        <a href="#contact" class="bar-link">Contact</a>
+      </nav>
+      <a href="mailto:sanjaya.surya.pradana@email.com" class="bar-cta">Hubungi saya</a>
+    </div>
+  </header>
+  <main id="atas">
+    <!-- Hero -->
+    <section class="hero" id="home" aria-labelledby="hero-name">
+      <div class="container">
+        <div class="hero-content hero-split">
+          <div class="hero-text">
+            <p class="hero-greeting">Halo, saya Sanjaya — frontend developer</p>
+            <h1 id="hero-name" class="hero-name">
+              Sanjaya Surya<br>Pradana
+            </h1>
+            <p class="hero-tagline">
+              Baru lulus SMKN 1 Kepanjen jurusan RPL.
+              Saya membangun aplikasi web yang rapi dan mudah dipakai, dan siap belajar cepat di tim.
+            </p>
+            <p class="hero-meta">SMKN 1 Kepanjen, RPL · Angkatan 2026 · Malang, Jawa Timur</p>
+            <div class="hero-actions">
+              <a href="assets/CV SANJAYA SURYA PRADANA XI RPL 1.pdf" class="btn btn-primary" download>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                Unduh CV
+              </a>
+              <a href="#panel-projects" class="btn btn-ghost" data-scroll>
+                Lihat proyek
+              </a>
+            </div>
+          </div>
+          <div class="badge" role="img" aria-label="Kartu identitas Sanjaya Surya Pradana">
+            <div class="lanyard" aria-hidden="true"><span>SSP · 2026 · SSP · 2026</span></div>
+            <div class="badge-clip" aria-hidden="true"><i class="ring"></i><i class="hook"></i></div>
+            <div class="id-card">
+              <img src="images/profile.jpg" alt="Foto profil Sanjaya Surya Pradana" width="600" height="760">
+            </div>
+          </div>
+        </div>
+        <div class="hero-scroll" aria-hidden="true">
+          <span>Scroll</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 5v14M19 12l-7 7-7-7"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Profil</span>
+          <h2 id="about-title" class="section-title display-font">Tentang Saya</h2>
+        </header>
+        <div class="about-grid">
+          <div class="about-text reveal reveal-delay-1">
+            <p>
+              Saya lulusan SMKN 1 Kepanjen jurusan Rekayasa Perangkat Lunak (RPL) tahun 2026. 
+              Selama 3 tahun di SMK, saya belajar fundamental pemrograman, basis data, dan pengembangan aplikasi berbasis web.
+            </p>
+            <p>
+              Saya memiliki ketertarikan kuat pada pengembangan Frontend menggunakan JavaScript/TypeScript, 
+              serta antusias mempelajari teknologi modern seperti React, Node.js, dan database PostgreSQL. 
+              Saat ini saya mencari kesempatan sebagai Frontend Developer untuk mulai karier dan terus berkembang.
+            </p>
+          </div>
+          <div class="about-highlights">
+            <div class="highlight reveal reveal-delay-2">
+              <span class="highlight-label">Pendidikan</span>
+              <span class="highlight-value">SMKN 1 Kepanjen — RPL</span>
+            </div>
+            <div class="highlight reveal reveal-delay-3">
+              <span class="highlight-label">Tahun Lulus</span>
+              <span class="highlight-value">2026</span>
+            </div>
+            <div class="highlight reveal reveal-delay-4">
+              <span class="highlight-label">Posisi</span>
+              <span class="highlight-value">Frontend Developer</span>
+            </div>
+            <div class="highlight reveal reveal-delay-5">
+              <span class="highlight-label">Lokasi</span>
+              <span class="highlight-value">Kepanjen, Malang, Jawa Timur</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Keahlian</span>
+          <h2 id="skills-title" class="section-title display-font">Teknologi & Tools</h2>
+        </header>
+        <ul class="skills-list" role="list" aria-label="Pilih keahlian untuk melihat deskripsi">
+          <li><button type="button" class="skill-item reveal reveal-delay-1 is-active" data-skill="html" aria-pressed="true">HTML & CSS</button></li>
+          <li><button type="button" class="skill-item reveal reveal-delay-2" data-skill="js" aria-pressed="false">JavaScript (ES6+)</button></li>
+          <li><button type="button" class="skill-item reveal reveal-delay-3" data-skill="ts" aria-pressed="false">TypeScript Dasar</button></li>
+          <li><button type="button" class="skill-item reveal reveal-delay-4" data-skill="react" aria-pressed="false">React.js</button></li>
+          <li><button type="button" class="skill-item reveal reveal-delay-5" data-skill="node" aria-pressed="false">Node.js & Express</button></li>
+          <li><button type="button" class="skill-item reveal reveal-delay-6" data-skill="php" aria-pressed="false">PHP & Laravel</button></li>
+          <li><button type="button" class="skill-item reveal reveal-delay-7" data-skill="db" aria-pressed="false">MySQL / PostgreSQL</button></li>
+          <li><button type="button" class="skill-item reveal reveal-delay-8" data-skill="git" aria-pressed="false">Git & GitHub</button></li>
+          <li><button type="button" class="skill-item reveal reveal-delay-1" data-skill="tailwind" aria-pressed="false">Tailwind CSS</button></li>
+          <li><button type="button" class="skill-item reveal reveal-delay-2" data-skill="api" aria-pressed="false">REST API</button></li>
+          <li><button type="button" class="skill-item reveal reveal-delay-3" data-skill="vscode" aria-pressed="false">VS Code</button></li>
+          <li><button type="button" class="skill-item reveal reveal-delay-4" data-skill="figma" aria-pressed="false">Figma (Dasar)</button></li>
+        </ul>
+        <div class="skill-detail reveal" aria-live="polite">
+          <div class="skill-detail-head">
+            <h3 class="skill-detail-title" id="skill-detail-title">HTML & CSS</h3>
+            <span class="skill-detail-level" id="skill-detail-level">Terampil</span>
+          </div>
+          <p class="skill-detail-desc" id="skill-detail-desc"></p>
+          <p class="skill-detail-use" id="skill-detail-use"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Showcase -->
+    <section class="section" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Portofolio</span>
+          <h2 id="portfolio-title" class="section-title display-font">Proyek & Portofolio</h2>
+        </header>
+        
+        <!-- Tab Navigation -->
+        <div class="tab-nav reveal reveal-delay-1" role="tablist" aria-label="Kategori portofolio">
+          <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-projects" id="tab-projects" data-tab="projects">
+            <span>Projects</span>
+            <svg class="tab-indicator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-certificates" id="tab-certificates" data-tab="certificates" tabindex="-1">
+            <span>Certificates</span>
+            <svg class="tab-indicator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-techstack" id="tab-techstack" data-tab="techstack" tabindex="-1">
+            <span>Tech Stack</span>
+            <svg class="tab-indicator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Tab Panels -->
+        <div class="tab-panels">
+          <!-- Projects Panel -->
+          <div id="panel-projects" class="tab-panel active" role="tabpanel" aria-labelledby="tab-projects">
+            <div class="projects-grid">
+              <article class="project-card reveal reveal-delay-1" data-project="login">
+                <div class="project-image" data-fallback="Halaman Login">
+                  <img src="images/Login%20Page.png" alt="Halaman login dengan kartu kaca dan latar cokelat" loading="lazy" width="800" height="500" onerror="this.style.display='none'">
+                </div>
+                <div class="project-content">
+                  <span class="project-category">Frontend UI</span>
+                  <h3 class="project-title display-font">Halaman Login</h3>
+                  <p class="project-desc">Form login dengan kartu efek kaca, input username dan password, tombol tampil kata sandi, dan tautan daftar. Dibangun responsif dengan latar dekoratif yang mewah.</p>
+                  <div class="project-tags">
+                    <span class="project-tag">HTML</span>
+                    <span class="project-tag">CSS</span>
+                    <span class="project-tag">JavaScript</span>
+                    <span class="project-tag">Responsive</span>
+                  </div>
+                  <button type="button" class="project-more" aria-expanded="false" data-open="login">Lihat detail</button>
+                </div>
+              </article>
+              <article class="project-card reveal reveal-delay-2" data-project="rekap">
+                <div class="project-image" data-fallback="Rekap Pengujian Situs">
+                  <img src="images/Screenshot 2026-10-29 111408.png" alt="Dashboard rekap pengujian situs dengan kartu statistik dan tabel" loading="lazy" width="800" height="500" onerror="this.style.display='none'">
+                </div>
+                <div class="project-content">
+                  <span class="project-category">Landing Page</span>
+                  <h3 class="project-title display-font">Pesona Kelok Mertan</h3>
+                  <p class="project-desc">Website informasi wisata Pesona Kelok Mertan yang memperkenalkan keindahan panorama kereta api di Kulon Progo, Yogyakarta.</p>
+                  <div class="project-tags">
+                    <span class="project-tag">HTML</span>
+                    <span class="project-tag">CSS</span>
+                    <span class="project-tag">JavaScript</span>
+                    <span class="project-tag">Destination</span>
+                  </div>
+                  <button type="button" class="project-more" aria-expanded="false" data-open="rekap">Lihat detail</button>
+                </div>
+              </article>
+              <article class="project-card reveal reveal-delay-3" data-project="modal">
+                <div class="project-image" data-fallback="Crispo 3D">
+                  <img src="images/Screenshot 2026-10-29 111554.png" alt="Modal notifikasi berhasil disimpan" loading="lazy" width="800" height="500" onerror="this.style.display='none'">
+                </div>
+                <div class="project-content">
+                  <span class="project-category">Product Website</span>
+                  <h3 class="project-title display-font">Cripso 3D</h3>
+                  <p class="project-desc">Website promosi keripik singkong premium dengan desain modern dan elegan untuk memperkenalkan produk kepada pelanggan.</p>
+                  <div class="project-tags">
+                    <span class="project-tag">HTML</span>
+                    <span class="project-tag">CSS</span>
+                    <span class="project-tag">JavaScript</span>
+                    <span class="project-tag">Crispo</span>
+                  </div>
+                  <button type="button" class="project-more" aria-expanded="false" data-open="modal">Lihat detail</button>
+                </div>
+              </article>
+              <article class="project-card reveal reveal-delay-4" data-project="task">
+                <div class="project-image is-placeholder" data-fallback="Task Management API · Swagger UI">
+                </div>
+                <div class="project-content">
+                  <span class="project-category">REST API</span>
+                  <h3 class="project-title display-font">Task Management API</h3>
+                  <p class="project-desc">RESTful API untuk manajemen tugas dengan autentikasi JWT, CRUD task, kategori, prioritas, dan dokumentasi Swagger/OpenAPI. Dibangun untuk belajar backend modern.</p>
+                  <div class="project-tags">
+                    <span class="project-tag">Node.js</span>
+                    <span class="project-tag">Express</span>
+                    <span class="project-tag">Prisma ORM</span>
+                    <span class="project-tag">JWT</span>
+                  </div>
+                  <button type="button" class="project-more" aria-expanded="false" data-open="task">Lihat detail</button>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Certificates Panel -->
+          <div id="panel-certificates" class="tab-panel" role="tabpanel" aria-labelledby="tab-certificates" hidden>
+            <div class="certificates-grid">
+              <article class="certificate-card reveal reveal-delay-1">
+                <div class="certificate-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                    <polyline points="10 9 9 9 8 9"/>
+                  </svg>
+                </div>
+                <div class="certificate-content">
+                  <h3 class="certificate-title">Belajar Dasar Pemrograman Web</h3>
+                  <span class="certificate-issuer">Dicoding Indonesia</span>
+                  <span class="certificate-date">2024</span>
+                </div>
+              </article>
+              <article class="certificate-card reveal reveal-delay-2">
+                <div class="certificate-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                    <polyline points="10 9 9 9 8 9"/>
+                  </svg>
+                </div>
+                <div class="certificate-content">
+                  <h3 class="certificate-title">Belajar Membuat Aplikasi Back-End untuk Pemula</h3>
+                  <span class="certificate-issuer">Dicoding Indonesia</span>
+                  <span class="certificate-date">2024</span>
+                </div>
+              </article>
+              <article class="certificate-card reveal reveal-delay-3">
+                <div class="certificate-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                    <polyline points="10 9 9 9 8 9"/>
+                  </svg>
+                </div>
+                <div class="certificate-content">
+                  <h3 class="certificate-title">Belajar Fundamental Aplikasi Android</h3>
+                  <span class="certificate-issuer">Dicoding Indonesia</span>
+                  <span class="certificate-date">2025</span>
+                </div>
+              </article>
+              <article class="certificate-card reveal reveal-delay-4">
+                <div class="certificate-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                    <polyline points="10 9 9 9 8 9"/>
+                  </svg>
+                </div>
+                <div class="certificate-content">
+                  <h3 class="certificate-title">Junior Web Developer Certification</h3>
+                  <span class="certificate-issuer">BNSP / SMKN 1 Kepanjen</span>
+                  <span class="certificate-date">2026</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Tech Stack Panel -->
+          <div id="panel-techstack" class="tab-panel" role="tabpanel" aria-labelledby="tab-techstack" hidden>
+            <div class="techstack-categories">
+              <div class="techstack-category reveal reveal-delay-1">
+                <h3 class="techstack-category-title">Frontend</h3>
+                <div class="techstack-tags">
+                  <span class="techstack-tag">HTML5</span>
+                  <span class="techstack-tag">CSS3</span>
+                  <span class="techstack-tag">JavaScript (ES6+)</span>
+                  <span class="techstack-tag">TypeScript</span>
+                  <span class="techstack-tag">React.js</span>
+                  <span class="techstack-tag">Tailwind CSS</span>
+                  <span class="techstack-tag">Bootstrap 5</span>
+                </div>
+              </div>
+              <div class="techstack-category reveal reveal-delay-2">
+                <h3 class="techstack-category-title">Backend</h3>
+                <div class="techstack-tags">
+                  <span class="techstack-tag">Node.js</span>
+                  <span class="techstack-tag">Express.js</span>
+                  <span class="techstack-tag">PHP</span>
+                  <span class="techstack-tag">Laravel</span>
+                  <span class="techstack-tag">REST API</span>
+                  <span class="techstack-tag">JWT Auth</span>
+                </div>
+              </div>
+              <div class="techstack-category reveal reveal-delay-3">
+                <h3 class="techstack-category-title">Database</h3>
+                <div class="techstack-tags">
+                  <span class="techstack-tag">MySQL</span>
+                  <span class="techstack-tag">PostgreSQL</span>
+                  <span class="techstack-tag">Firebase</span>
+                  <span class="techstack-tag">Prisma ORM</span>
+                </div>
+              </div>
+              <div class="techstack-category reveal reveal-delay-4">
+                <h3 class="techstack-category-title">Tools & Others</h3>
+                <div class="techstack-tags">
+                  <span class="techstack-tag">Git & GitHub</span>
+                  <span class="techstack-tag">VS Code</span>
+                  <span class="techstack-tag">Figma</span>
+                  <span class="techstack-tag">Postman</span>
+                  <span class="techstack-tag">Docker (Dasar)</span>
+                  <span class="techstack-tag">Linux (Dasar)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Kontak</span>
+          <h2 id="contact-title" class="section-title display-font">Mari Terhubung</h2>
+        </header>
+        <div class="contact-content reveal reveal-delay-1">
+          <p class="contact-text">
+            Saya terbuka untuk magang, posisi Frontend Developer full-time, atau freelance project kecil. 
+            Senang berdiskusi soal teknologi, belajar hal baru, atau sekadar ngobrol. Silakan hubungi saya lewat tautan di bawah.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:sanjaya.surya.pradana@email.com" class="contact-link" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+              sanjaya.surya.pradana@email.com
+            </a>
+            <a href="https://linkedin.com/in/sanjayasuryapradana" target="_blank" rel="noopener" class="contact-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/sanjayasuryapradana" target="_blank" rel="noopener" class="contact-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+              GitHub
+            </a>
+            <a href="https://instagram.com/sanjayasuryapradana" target="_blank" rel="noopener" class="contact-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+              </svg>
+              Instagram
+            </a>
+            <a href="https://tiktok.com/@sanjayasuryapradana" target="_blank" rel="noopener" class="contact-link" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
+              </svg>
+              TikTok
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p class="footer-text">Dibangun dengan <span class="heart">♥</span> oleh <span class="display-font">Sanjaya Surya Pradana</span> · 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
