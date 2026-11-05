@@ -299,12 +299,12 @@ tabButtons.forEach(btn => {
     js: { name: 'JavaScript (ES6+)', level: 'Terampil', desc: 'Mengolah DOM, fetch data, dan modul ES6 untuk interaksi seperti tab portfolio, validasi form, dan modal notifikasi.', use: 'Dipakai untuk: tab Projects/Certificates, modal, dan badge interaktif di hero.' },
     ts: { name: 'TypeScript Dasar', level: 'Dasar', desc: 'Memahami tipe dasar, interface, dan type untuk props agar kesalahan operands tertangkap sebelum dijalankan.', use: 'Dipakai untuk: mencoba menulis ulang komponen kecil React dengan aman.' },
     react: { name: 'React.js', level: 'Menengah', desc: 'Membangun UI dari komponen, mengatur state dengan hooks, dan mengambil data API dengan loading dan error yang jelas.', use: 'Dipakai untuk: latihan aplikasi daftar tugas dan halaman dinamis.' },
-    node: { name: 'Node.js & Express', level: 'Menengah', desc: 'Menyusun server kecil dengan routing, middleware, dan autentikasi JWT, lalu mengujinya lewat Postman sebelum disambung ke frontend.', use: 'Dipakai untuk: Task Management API di daftar proyek.' },
+    node: { name: 'Node.js & Express', level: 'Menengah', desc: 'Menyusun server kecil dengan routing, middleware, dan autentikasi JWT, lalu mengujinya lewat Postman sebelum disambung ke aplikasi.', use: 'Dipakai untuk: Task Management API di daftar proyek.' },
     php: { name: 'PHP & Laravel', level: 'Menengah', desc: 'Terbiasa dari praktik SMK: routing, Blade, Eloquent, dan validasi form untuk aplikasi CRUD yang utuh.', use: 'Dipakai untuk: tugas sekolah dan proyek CRUD berbasis server.' },
     db: { name: 'MySQL / PostgreSQL', level: 'Menengah', desc: 'Merancang tabel berelasi, menulis join dan agregasi, serta memakai ORM seperti Prisma agar query konsisten.', use: 'Dipakai untuk: penyimpanan task, kategori, dan rekap pengujian.' },
     git: { name: 'Git & GitHub', level: 'Terampil', desc: 'Bekerja dengan branch, commit yang jelas, dan pull request untuk kolaborasi tanpa menimpa pekerjaan orang lain.', use: 'Dipakai untuk: menyimpan semua proyek dan riwayat perubahannya.' },
     tailwind: { name: 'Tailwind CSS', level: 'Terampil', desc: 'Menyusun tampilan cepat dengan kelas utilitas dan menjaga konsistensi spacing serta breakpoint tanpa CSS berulang.', use: 'Dipakai untuk: prototyping halaman dan varian layout responsif.' },
-    api: { name: 'REST API', level: 'Menengah', desc: 'Merancang endpoint dengan method dan status code yang tepat, plus dokumentasi Swagger agar mudah dipakai frontend.', use: 'Dipakai untuk: autentikasi, CRUD task, dan integrasi frontend-backend.' },
+    api: { name: 'REST API', level: 'Menengah', desc: 'Merancang endpoint dengan method dan status code yang tepat, plus dokumentasi Swagger agar mudah dipakai aplikasi.', use: 'Dipakai untuk: autentikasi, CRUD task, dan integrasi aplikasi-backend.' },
     vscode: { name: 'VS Code', level: 'Harian', desc: 'Alur kerja sehari-hari: debugging, multi-kursor, snippet, dan ekstensi formatter agar kode konsisten.', use: 'Dipakai untuk: seluruh pengembangan di portfolio ini.' },
     figma: { name: 'Figma (Dasar)', level: 'Dasar', desc: 'Membaca desain, mengukur spacing, dan mengekstrak warna serta aset agar hasil slicing mendekati mockup.', use: 'Dipakai untuk: menerjemahkan mockup sederhana menjadi halaman.' }
   };
@@ -403,15 +403,15 @@ tabButtons.forEach(btn => {
       features: ['Input username dan password dengan tombol tampil kata sandi', 'Validasi kosong dan pesan error di bawah field', 'Tautan daftar dan lupa kata sandi yang jelas', 'Tata letak responsif dari HP sampai desktop']
     },
     rekap: {
-      desc: 'Dashboard admin untuk merekap hasil pengujian situs: ringkasan angka di atas, tabel data di bawah. Dibuat agar admin cepat menjawab pertanyaan harian: berapa yang lolos, apa yang tertunda, dan data mana yang perlu tindakan.',
-      features: ['Kartu statistik dan status sinkronisasi data', 'Filter tanggal dan status plus pencarian', 'Tabel rekap dengan aksi tambah dan hapus', 'Keadaan kosong yang mengarahkan admin mengisi data']
+      desc: 'Website informasi wisata Pesona Kelok Mertan yang memperkenalkan keindahan panorama kereta api di Kulon Progo, Yogyakarta. Halaman menyusun cerita perjalanan, daftar destinasi, dan informasi praktis pengunjung sebelum berangkat.',
+      features: ['Hero menyajikan konteks perjalanan dan ajakan jelajahi', 'Daftar destinasi dengan cerita singkat di setiap lokasi', 'Informasi praktis wisata dan kontak pengelola', 'Tampilan responsif dari HP sampai desktop']
     },
     modal: {
-      desc: 'Komponen notifikasi konfirmasi yang muncul setelah data berhasil disimpan. Latar diburamkan agar fokus ke pesan, tombol OK menutup dengan keyboard maupun klik, dan fokus kembali ke pemicu semula.',
-      features: ['Ikon centang dan pesan sukses yang singkat', 'Tutup lewat tombol, backdrop, maupun tombol Escape', 'Fokus kembali ke pemicu setelah ditutup', 'Animasi muncul yang mati saat reduced-motion']
+      desc: 'Website promosi keripik singkong premium dengan desain modern dan elegan untuk memperkenalkan produk kepada pelanggan. Halaman menyampaikan keunggulan produk, cerita pembuat, dan ajakan mencoba.',
+      features: ['Hero produk dengan nilai premium dan ajakan coba', 'Ringkasan keunggulan singkong dan bahan produk', 'Cerita pembuat keripik singkong', 'Tampilan responsif dari HP sampai desktop']
     },
     task: {
-      desc: 'RESTful API untuk manajemen tugas yang dibangun untuk belajar backend modern: autentikasi JWT, CRUD task dengan kategori dan prioritas, serta dokumentasi Swagger agar mudah diuji dari frontend.',
+      desc: 'RESTful API untuk manajemen tugas yang dibangun untuk belajar backend modern: autentikasi JWT, CRUD task dengan kategori dan prioritas, serta dokumentasi Swagger agar mudah diuji dari aplikasi.',
       features: ['Autentikasi JWT dengan register dan login', 'CRUD task, kategori, dan prioritas', 'Validasi input dan kode status yang tepat', 'Dokumentasi Swagger/OpenAPI dan pengujian via Postman']
     }
   };

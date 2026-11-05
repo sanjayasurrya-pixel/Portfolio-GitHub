@@ -404,6 +404,7 @@ a:focus-visible, button:focus-visible {
 /* Sections */
 .section { padding: clamp(48px, 7vh, 80px) 0; }
 .section + .section { border-top: 1px solid var(--line); }
+.hero + .section { border-top: 1px solid var(--line); }
 
 .section-header { text-align: left; margin-bottom: 28px; max-width: 640px; }
 .section-label {
