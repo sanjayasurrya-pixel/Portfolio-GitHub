@@ -411,8 +411,8 @@ tabButtons.forEach(btn => {
       features: ['Hero produk dengan nilai premium dan ajakan coba', 'Ringkasan keunggulan singkong dan bahan produk', 'Cerita pembuat keripik singkong', 'Tampilan responsif dari HP sampai desktop']
     },
     task: {
-      desc: 'RESTful API untuk manajemen tugas yang dibangun untuk belajar backend modern: autentikasi JWT, CRUD task dengan kategori dan prioritas, serta dokumentasi Swagger agar mudah diuji dari aplikasi.',
-      features: ['Autentikasi JWT dengan register dan login', 'CRUD task, kategori, dan prioritas', 'Validasi input dan kode status yang tepat', 'Dokumentasi Swagger/OpenAPI dan pengujian via Postman']
+      desc: 'Proyek visualisasi tata surya berbasis web yang menampilkan planet beserta orbitnya. Pengguna dapat melihat susunan tata surya dan mengenal informasi singkat tiap planet secara interaktif.',
+      features: ['Tampilan planet dan orbit tata surya', 'Informasi singkat tiap planet', 'Animasi pergerakan/orbit yang halus', 'Tata letak responsif untuk berbagai ukuran layar']
     }
   };
 
@@ -470,4 +470,47 @@ tabButtons.forEach(btn => {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') cards.forEach(closeCard);
   });
+})();
+
+// Navigasi: tandai link aktif sesuai section yang terlihat
+(function initNavSpy() {
+  const links = Array.from(document.querySelectorAll('.bar-link[href^="#"]'));
+  if (!links.length) return;
+  const pairs = links.map((link) => {
+    const id = link.getAttribute('href').slice(1);
+    const section = document.getElementById(id);
+    return section ? { link, section } : null;
+  }).filter(Boolean);
+  if (!pairs.length) return;
+
+  function setActive(id) {
+    links.forEach((link) => {
+      const on = link.getAttribute('href') === '#' + id;
+      link.classList.toggle('is-active', on);
+      if (on) link.setAttribute('aria-current', 'page');
+      else link.removeAttribute('aria-current');
+    });
+  }
+
+  links.forEach((link) => {
+    link.addEventListener('click', () => {
+      const id = link.getAttribute('href').slice(1);
+      if (id) setActive(id);
+    });
+  });
+
+  if ('IntersectionObserver' in window) {
+    const visible = new Map();
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        visible.set(entry.target.id, entry.isIntersecting ? entry.intersectionRatio : 0);
+      });
+      let bestId = null, bestRatio = 0;
+      visible.forEach((ratio, id) => {
+        if (ratio > bestRatio) { bestRatio = ratio; bestId = id; }
+      });
+      if (bestId) setActive(bestId);
+    }, { rootMargin: '-20% 0px -60% 0px', threshold: [0, 0.25, 0.5, 0.75, 1] });
+    pairs.forEach(({ section }) => observer.observe(section));
+  }
 })();
