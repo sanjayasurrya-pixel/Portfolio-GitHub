@@ -1,4 +1,4 @@
-﻿// Intersection Observer for scroll reveals
+// Intersection Observer for scroll reveals
 const revealEls = document.querySelectorAll('.reveal');
 
 if ('IntersectionObserver' in window) {
@@ -25,13 +25,13 @@ if ('IntersectionObserver' in window) {
   revealEls.forEach(el => el.classList.add('visible'));
 }
 
-// Dua bahasa: Indonesia & Inggris â€” toggle di pill navigasi
+// Dua bahasa: Indonesia & Inggris, toggle di pill navigasi
 const I18N = {
   id: {
     nav_home: 'Beranda', nav_about: 'Tentang', nav_portfolio: 'Portofolio', nav_contact: 'Kontak', nav_cta: 'Hubungi saya',
-    hero_greeting: 'Halo, saya Sanjaya â€” Junior Programmer',
+    hero_greeting: 'Halo, saya Sanjaya, Junior Programmer',
     hero_tagline: 'Siswa SMKN 1 Kepanjen jurusan RPL. Saya membangun aplikasi web yang rapi dan mudah dipakai, dan siap belajar cepat di tim.',
-    hero_meta: 'Junior Programmer  Â·  Malang, Jawa Timur',
+    hero_meta: 'Junior Programmer  ·  Malang, Jawa Timur',
     btn_cv: 'Unduh CV', btn_projects: 'Lihat proyek',
     sec_profile: 'Profil', about_title: 'Tentang Saya',
     about_p1: 'Saya Siswa SMKN 1 Kepanjen jurusan Rekayasa Perangkat Lunak (RPL) tahun 2026. Selama 3 tahun di SMK, saya belajar fundamental pemrograman, basis data, dan pengembangan aplikasi berbasis web.',
@@ -51,7 +51,7 @@ const I18N = {
     contact_text: 'Saya terbuka untuk menjawab berbagai pertanyaan.',
     form_name: 'Nama', form_email: 'Email', form_message: 'Pesan', form_submit: 'Kirim pesan',
     ph_name: 'Tulis nama lengkap Anda', ph_email: 'nama@email.com',
-    ph_message: 'Ceritakan keperluan Anda â€” misalnya tawaran kerja, magang, atau kolaborasi proyek. Jangan lupa sertakan cara menghubungi Anda kembali.',
+    ph_message: 'Ceritakan keperluan Anda, misalnya tawaran kerja, magang, atau kolaborasi proyek. Jangan lupa sertakan cara menghubungi Anda kembali.',
     contact_links_heading: 'Atau temui saya di',
     footer_summary: 'Siswa SMKN 1 Kepanjen jurusan RPL. Membangun aplikasi web yang rapi, mudah dipakai, dan siap belajar di tiap proyek.',
     footer_nav: 'Navigasi', footer_projects: 'Proyek', footer_contact: 'Kontak', footer_top: 'Ke atas',
@@ -59,9 +59,9 @@ const I18N = {
   },
   en: {
     nav_home: 'Home', nav_about: 'About', nav_portfolio: 'Portfolio', nav_contact: 'Contact', nav_cta: 'Contact me',
-    hero_greeting: "Hi, I'm Sanjaya â€” Junior Programmer",
+    hero_greeting: "Hi, I'm Sanjaya, Junior Programmer",
     hero_tagline: 'Vocational high school student at SMKN 1 Kepanjen, software engineering major. I build clean, easy-to-use web apps and learn fast on a team.',
-    hero_meta: 'Junior Programmer  Â·  Malang, East Java',
+    hero_meta: 'Junior Programmer  ·  Malang, East Java',
     btn_cv: 'Download CV', btn_projects: 'View projects',
     sec_profile: 'Profile', about_title: 'About Me',
     about_p1: "I'm a vocational high school student at SMKN 1 Kepanjen, software engineering major, class of 2026. Over three years there I've learned programming fundamentals, databases, and web application development.",
@@ -81,7 +81,7 @@ const I18N = {
     contact_text: "I'm happy to answer any questions you have.",
     form_name: 'Name', form_email: 'Email', form_message: 'Message', form_submit: 'Send message',
     ph_name: 'Your full name', ph_email: 'name@email.com',
-    ph_message: "Tell me what you need â€” a job offer, internship, or project collaboration. Don't forget to include how I can reach you back.",
+    ph_message: "Tell me what you need, a job offer, internship, or project collaboration. Don't forget to include how I can reach you back.",
     contact_links_heading: 'Or find me on',
     footer_summary: 'Vocational student at SMKN 1 Kepanjen, software engineering major. Building clean, easy-to-use web apps and learning on every project.',
     footer_nav: 'Navigation', footer_projects: 'Projects', footer_contact: 'Contact', footer_top: 'Back to top',
@@ -198,7 +198,7 @@ tabButtons.forEach(btn => {
   });
 });
 
-// Tilt 3D kartu profil mengikuti kursor â€” terpisah dari sway/drag (.badge vs .id-card)
+// Tilt 3D kartu profil mengikuti kursor, terpisah dari sway/drag (.badge vs .id-card)
 (function initCardTilt() {
   const badge = document.querySelector('.badge');
   const card = document.querySelector('.id-card');
@@ -384,7 +384,7 @@ tabButtons.forEach(btn => {
   }, { passive: true });
 })();
 
-// Deskripsi per keahlian â€” satu panel, diganti sesuai tombol yang dipilih
+// Deskripsi per keahlian, satu panel, diganti sesuai tombol yang dipilih
 (function initSkills() {
   const buttons = document.querySelectorAll('.skill-item[data-skill]');
   const panel = document.querySelector('.skill-detail');
@@ -655,7 +655,7 @@ tabButtons.forEach(btn => {
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const coarse = window.matchMedia('(pointer: coarse)').matches;
 
-  // Garis progres scroll â€” informatif, bukan dekorasi
+  // Garis progres scroll, informatif, bukan dekorasi
   const progress = document.querySelector('.scroll-progress');
   if (progress) {
     let ticking = false;

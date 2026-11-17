@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --paper: #0b0b0c;
   --paper-2: #141416;
   --ink: #f4f1e8;
@@ -92,7 +92,7 @@ a:focus-visible, button:focus-visible {
   padding: 0 clamp(20px, 4vw, 32px);
 }
 
-/* Top bar â€” floating pill */
+/* Top bar , floating pill */
 .site-bar {
   position: fixed;
   top: 14px;
@@ -234,7 +234,7 @@ a:focus-visible, button:focus-visible {
 .hero-center .hero-name::after { margin-left: auto; margin-right: auto; }
 @keyframes heroIn { to { opacity: 1; } }
 
-/* ID badge gantung â€” poros di ujung atas tali */
+/* ID badge gantung , poros di ujung atas tali */
 .badge {
   display: flex;
   flex-direction: column;
@@ -443,7 +443,7 @@ a:focus-visible, button:focus-visible {
   color: var(--ink);
 }
 
-/* Foto profil â€” lingkaran, di sisi kanan Tentang Saya */
+/* Foto profil , lingkaran, di sisi kanan Tentang Saya */
 .profile-photo {
   width: min(340px, 100%);
   height: auto;
@@ -503,7 +503,7 @@ a:focus-visible, button:focus-visible {
 .skill-item:active { transform: scale(0.96); }
 .skill-item.is-active { background: var(--pine); border-color: var(--pine); color: #141310; }
 
-/* Panel deskripsi keahlian â€” satu yang berubah, sisanya diam */
+/* Panel deskripsi keahlian , satu yang berubah, sisanya diam */
 .skill-detail {
   margin-top: 20px;
   border-top: 2.5px solid var(--pine);
@@ -658,7 +658,7 @@ a:focus-visible, button:focus-visible {
 .project-more:active { transform: scale(0.97); }
 .project-more[aria-expanded="true"] { background: var(--pine-deep); border-color: var(--pine-deep); }
 
-/* Detail inline â€” mengembang di dalam kartu, bukan popup */
+/* Detail inline , mengembang di dalam kartu, bukan popup */
 .project-extra { grid-column: 1 / -1; }
 .project-extra[hidden] { display: none; }
 .project-card.is-open .project-extra { display: block; animation: pmIn 260ms ease; }
@@ -782,7 +782,7 @@ a:focus-visible, button:focus-visible {
 .reveal-delay-1, .reveal-delay-2, .reveal-delay-3, .reveal-delay-4,
 .reveal-delay-5, .reveal-delay-6, .reveal-delay-7, .reveal-delay-8 { transition-delay: 0s; }
 
-/* Layar lebar â€” beri napas dan skala lebih besar */
+/* Layar lebar , beri napas dan skala lebih besar */
 @media (min-width: 1200px) {
   .section { padding: clamp(64px, 9vh, 112px) 0; }
   .section-title { font-size: clamp(36px, 3.4vw, 48px); }
