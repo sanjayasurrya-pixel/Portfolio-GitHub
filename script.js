@@ -25,6 +25,7 @@ if ('IntersectionObserver' in window) {
   revealEls.forEach(el => el.classList.add('visible'));
 }
 
+<<<<<<< HEAD
 // Dua bahasa: Indonesia & Inggris — toggle di pill navigasi
 const I18N = {
   id: {
@@ -125,6 +126,8 @@ document.querySelectorAll('.lang-btn').forEach((b) => {
 });
 applyI18n();
 
+=======
+>>>>>>> de8b943471d2f2b481fe9362575f1cb843d496ad
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
@@ -395,6 +398,7 @@ tabButtons.forEach(btn => {
   if (!buttons.length || !panel || !titleEl || !descEl) return;
 
   const INFO = {
+<<<<<<< HEAD
     html: { name: 'HTML & CSS', id: { level: 'Terampil', desc: 'Menulis struktur semantik yang rapi dan stylesheet yang mudah dirawat, termasuk layout flexbox/grid dan halaman yang tetap rapi di layar HP.', use: 'halaman login, dashboard rekap, dan seluruh tampilan portfolio ini.' }, en: { level: 'Proficient', desc: 'Writing clean semantic structure and maintainable stylesheets, including flexbox/grid layout and pages that stay tidy on small screens.', use: 'the login page, the recap dashboard, and this whole portfolio.' } },
     js: { name: 'JavaScript (ES6+)', id: { level: 'Terampil', desc: 'Mengolah DOM, fetch data, dan modul ES6 untuk interaksi seperti tab portfolio, validasi form, dan modal notifikasi.', use: 'tab Projects/Sertifikat, modal, dan badge interaktif di hero.' }, en: { level: 'Proficient', desc: 'DOM manipulation, fetching data, and ES6 modules for interactions like portfolio tabs, form validation, and notification modals.', use: 'the Projects/Certificates tabs, modals, and the interactive hero badge.' } },
     ts: { name: 'TypeScript Dasar', id: { level: 'Dasar', desc: 'Memahami tipe dasar, interface, dan type untuk props agar kesalahan operands tertangkap sebelum dijalankan.', use: 'mencoba menulis ulang komponen kecil React dengan aman.' }, en: { level: 'Basic', desc: 'Understanding basic types, interfaces, and prop typing so operand errors are caught before the code runs.', use: 'safely rewriting small React components.' } },
@@ -407,18 +411,36 @@ tabButtons.forEach(btn => {
     api: { name: 'REST API', id: { level: 'Menengah', desc: 'Merancang endpoint dengan method dan status code yang tepat, plus dokumentasi Swagger agar mudah dipakai aplikasi.', use: 'autentikasi, CRUD task, dan integrasi aplikasi-backend.' }, en: { level: 'Intermediate', desc: 'Designing endpoints with proper methods and status codes, plus Swagger docs so apps can consume them easily.', use: 'auth, task CRUD, and app-backend integration.' } },
     vscode: { name: 'VS Code', id: { level: 'Harian', desc: 'Alur kerja sehari-hari: debugging, multi-kursor, snippet, dan ekstensi formatter agar kode konsisten.', use: 'seluruh pengembangan di portfolio ini.' }, en: { level: 'Daily', desc: 'Daily workflow: debugging, multi-cursor editing, snippets, and formatter extensions to keep code consistent.', use: 'all development in this portfolio.' } },
     figma: { name: 'Figma (Dasar)', id: { level: 'Dasar', desc: 'Membaca desain, mengukur spacing, dan mengekstrak warna serta aset agar hasil slicing mendekati mockup.', use: 'menerjemahkan mockup sederhana menjadi halaman.' }, en: { level: 'Basic', desc: 'Reading designs, measuring spacing, and extracting colors and assets so the built page matches the mockup.', use: 'translating simple mockups into pages.' } }
+=======
+    html: { name: 'HTML & CSS', level: 'Terampil', desc: 'Menulis struktur semantik yang rapi dan stylesheet yang mudah dirawat, termasuk layout flexbox/grid dan halaman yang tetap rapi di layar HP.', use: 'Dipakai untuk: halaman login, dashboard rekap, dan seluruh tampilan portfolio ini.' },
+    js: { name: 'JavaScript (ES6+)', level: 'Terampil', desc: 'Mengolah DOM, fetch data, dan modul ES6 untuk interaksi seperti tab portfolio, validasi form, dan modal notifikasi.', use: 'Dipakai untuk: tab Projects/Certificates, modal, dan badge interaktif di hero.' },
+    ts: { name: 'TypeScript Dasar', level: 'Dasar', desc: 'Memahami tipe dasar, interface, dan type untuk props agar kesalahan operands tertangkap sebelum dijalankan.', use: 'Dipakai untuk: mencoba menulis ulang komponen kecil React dengan aman.' },
+    react: { name: 'React.js', level: 'Menengah', desc: 'Membangun UI dari komponen, mengatur state dengan hooks, dan mengambil data API dengan loading dan error yang jelas.', use: 'Dipakai untuk: latihan aplikasi daftar tugas dan halaman dinamis.' },
+    node: { name: 'Node.js & Express', level: 'Menengah', desc: 'Menyusun server kecil dengan routing, middleware, dan autentikasi JWT, lalu mengujinya lewat Postman sebelum disambung ke aplikasi.', use: 'Dipakai untuk: Task Management API di daftar proyek.' },
+    php: { name: 'PHP & Laravel', level: 'Menengah', desc: 'Terbiasa dari praktik SMK: routing, Blade, Eloquent, dan validasi form untuk aplikasi CRUD yang utuh.', use: 'Dipakai untuk: tugas sekolah dan proyek CRUD berbasis server.' },
+    db: { name: 'MySQL / PostgreSQL', level: 'Menengah', desc: 'Merancang tabel berelasi, menulis join dan agregasi, serta memakai ORM seperti Prisma agar query konsisten.', use: 'Dipakai untuk: penyimpanan task, kategori, dan rekap pengujian.' },
+    git: { name: 'Git & GitHub', level: 'Terampil', desc: 'Bekerja dengan branch, commit yang jelas, dan pull request untuk kolaborasi tanpa menimpa pekerjaan orang lain.', use: 'Dipakai untuk: menyimpan semua proyek dan riwayat perubahannya.' },
+    tailwind: { name: 'Tailwind CSS', level: 'Terampil', desc: 'Menyusun tampilan cepat dengan kelas utilitas dan menjaga konsistensi spacing serta breakpoint tanpa CSS berulang.', use: 'Dipakai untuk: prototyping halaman dan varian layout responsif.' },
+    api: { name: 'REST API', level: 'Menengah', desc: 'Merancang endpoint dengan method dan status code yang tepat, plus dokumentasi Swagger agar mudah dipakai aplikasi.', use: 'Dipakai untuk: autentikasi, CRUD task, dan integrasi aplikasi-backend.' },
+    vscode: { name: 'VS Code', level: 'Harian', desc: 'Alur kerja sehari-hari: debugging, multi-kursor, snippet, dan ekstensi formatter agar kode konsisten.', use: 'Dipakai untuk: seluruh pengembangan di portfolio ini.' },
+    figma: { name: 'Figma (Dasar)', level: 'Dasar', desc: 'Membaca desain, mengukur spacing, dan mengekstrak warna serta aset agar hasil slicing mendekati mockup.', use: 'Dipakai untuk: menerjemahkan mockup sederhana menjadi halaman.' }
+>>>>>>> de8b943471d2f2b481fe9362575f1cb843d496ad
   };
 
   function select(key) {
     const info = INFO[key];
     if (!info) return;
+<<<<<<< HEAD
     const l = info[CURRENT_LANG] || info.id;
+=======
+>>>>>>> de8b943471d2f2b481fe9362575f1cb843d496ad
     buttons.forEach((b) => {
       const on = b.dataset.skill === key;
       b.classList.toggle('is-active', on);
       b.setAttribute('aria-pressed', on ? 'true' : 'false');
     });
     titleEl.textContent = info.name;
+<<<<<<< HEAD
     if (levelEl) levelEl.textContent = l.level;
     descEl.textContent = l.desc;
     if (useEl) {
@@ -427,6 +449,16 @@ tabButtons.forEach(btn => {
       label.textContent = t('skill_use_label');
       useEl.appendChild(label);
       useEl.appendChild(document.createTextNode(l.use));
+=======
+    if (levelEl) levelEl.textContent = info.level;
+    descEl.textContent = info.desc;
+    if (useEl) {
+      useEl.innerHTML = '';
+      const label = document.createElement('strong');
+      label.textContent = 'Dipakai untuk: ';
+      useEl.appendChild(label);
+      useEl.appendChild(document.createTextNode(info.use.replace(/^Dipakai untuk:\s*/, '')));
+>>>>>>> de8b943471d2f2b481fe9362575f1cb843d496ad
     }
     if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       panel.classList.remove('is-switching');
@@ -437,10 +469,13 @@ tabButtons.forEach(btn => {
 
   buttons.forEach((b) => b.addEventListener('click', () => select(b.dataset.skill)));
   select('html');
+<<<<<<< HEAD
   window.__reselectSkill = () => {
     const active = document.querySelector('.skill-item.is-active');
     if (active) select(active.dataset.skill);
   };
+=======
+>>>>>>> de8b943471d2f2b481fe9362575f1cb843d496ad
 })();
 
 // Tech stack mengikuti kursor: sorotan + tag magnetis di sekitar pointer
@@ -504,6 +539,7 @@ tabButtons.forEach(btn => {
 
   const DATA = {
     login: {
+<<<<<<< HEAD
       id: {
         desc: 'Halaman login responsif untuk aplikasi web dengan kartu efek kaca di atas latar dekoratif. Fokusnya pada kejelasan form: label terbaca, status error terlihat, dan alur masuk-daftar tidak membingungkan.',
         features: ['Input username dan password dengan tombol tampil kata sandi', 'Validasi kosong dan pesan error di bawah field', 'Tautan daftar dan lupa kata sandi yang jelas', 'Tata letak responsif dari HP sampai desktop']
@@ -542,6 +578,22 @@ tabButtons.forEach(btn => {
         desc: 'A web-based solar system visualization showing the planets and their orbits. Users can see how the solar system is arranged and learn short facts about each planet interactively.',
         features: ['Planet and solar system orbit view', 'Short facts about each planet', 'Smooth motion/orbit animation', 'Responsive layout for various screen sizes']
       }
+=======
+      desc: 'Halaman login responsif untuk aplikasi web dengan kartu efek kaca di atas latar dekoratif. Fokusnya pada kejelasan form: label terbaca, status error terlihat, dan alur masuk-daftar tidak membingungkan.',
+      features: ['Input username dan password dengan tombol tampil kata sandi', 'Validasi kosong dan pesan error di bawah field', 'Tautan daftar dan lupa kata sandi yang jelas', 'Tata letak responsif dari HP sampai desktop']
+    },
+    rekap: {
+      desc: 'Website informasi wisata Pesona Kelok Mertan yang memperkenalkan keindahan panorama kereta api di Kulon Progo, Yogyakarta. Halaman menyusun cerita perjalanan, daftar destinasi, dan informasi praktis pengunjung sebelum berangkat.',
+      features: ['Hero menyajikan konteks perjalanan dan ajakan jelajahi', 'Daftar destinasi dengan cerita singkat di setiap lokasi', 'Informasi praktis wisata dan kontak pengelola', 'Tampilan responsif dari HP sampai desktop']
+    },
+    modal: {
+      desc: 'Website promosi keripik singkong premium dengan desain modern dan elegan untuk memperkenalkan produk kepada pelanggan. Halaman menyampaikan keunggulan produk, cerita pembuat, dan ajakan mencoba.',
+      features: ['Hero produk dengan nilai premium dan ajakan coba', 'Ringkasan keunggulan singkong dan bahan produk', 'Cerita pembuat keripik singkong', 'Tampilan responsif dari HP sampai desktop']
+    },
+    task: {
+      desc: 'Proyek visualisasi tata surya berbasis web yang menampilkan planet beserta orbitnya. Pengguna dapat melihat susunan tata surya dan mengenal informasi singkat tiap planet secara interaktif.',
+      features: ['Tampilan planet dan orbit tata surya', 'Informasi singkat tiap planet', 'Animasi pergerakan/orbit yang halus', 'Tata letak responsif untuk berbagai ukuran layar']
+>>>>>>> de8b943471d2f2b481fe9362575f1cb843d496ad
     }
   };
 
@@ -556,7 +608,11 @@ tabButtons.forEach(btn => {
     p.textContent = d.desc;
     const h = document.createElement('h4');
     h.className = 'project-extra-sub';
+<<<<<<< HEAD
     h.textContent = t('pr_features');
+=======
+    h.textContent = 'Fitur utama';
+>>>>>>> de8b943471d2f2b481fe9362575f1cb843d496ad
     const ul = document.createElement('ul');
     ul.className = 'project-extra-features';
     d.features.forEach((f) => {
@@ -574,18 +630,30 @@ tabButtons.forEach(btn => {
     const extra = card.querySelector('.project-extra');
     if (extra) extra.hidden = true;
     const btn = card.querySelector('[data-open]');
+<<<<<<< HEAD
     if (btn) { btn.setAttribute('aria-expanded', 'false'); btn.textContent = t('pr_more'); }
+=======
+    if (btn) { btn.setAttribute('aria-expanded', 'false'); btn.textContent = 'Lihat detail'; }
+>>>>>>> de8b943471d2f2b481fe9362575f1cb843d496ad
   }
 
   function openCard(card) {
     const d = DATA[card.dataset.project];
     if (!d) return;
     cards.forEach((c) => { if (c !== card) closeCard(c); });
+<<<<<<< HEAD
     const extra = buildExtra(card, d[CURRENT_LANG] || d.id);
     card.classList.add('is-open');
     extra.hidden = false;
     const btn = card.querySelector('[data-open]');
     if (btn) { btn.setAttribute('aria-expanded', 'true'); btn.textContent = t('pr_less'); }
+=======
+    const extra = buildExtra(card, d);
+    card.classList.add('is-open');
+    extra.hidden = false;
+    const btn = card.querySelector('[data-open]');
+    if (btn) { btn.setAttribute('aria-expanded', 'true'); btn.textContent = 'Tutup detail'; }
+>>>>>>> de8b943471d2f2b481fe9362575f1cb843d496ad
     if (!reduced) card.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
   }
 
@@ -599,12 +667,15 @@ tabButtons.forEach(btn => {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') cards.forEach(closeCard);
   });
+<<<<<<< HEAD
 
   // Saat bahasa diganti: tutup semua kartu dan segarkan panel keahlian
   window.__onLangChange = () => {
     cards.forEach(closeCard);
     if (typeof window.__reselectSkill === 'function') window.__reselectSkill();
   };
+=======
+>>>>>>> de8b943471d2f2b481fe9362575f1cb843d496ad
 })();
 
 // Navigasi: tandai link aktif sesuai section yang terlihat
@@ -648,6 +719,7 @@ tabButtons.forEach(btn => {
     }, { rootMargin: '-20% 0px -60% 0px', threshold: [0, 0.25, 0.5, 0.75, 1] });
     pairs.forEach(({ section }) => observer.observe(section));
   }
+<<<<<<< HEAD
 })();
 
 // Efek interaktif ringan: progres scroll, sorotan kartu, tombol magnetis
@@ -712,4 +784,6 @@ tabButtons.forEach(btn => {
     }, { passive: true });
     el.addEventListener('pointerleave', () => { hovering = false; tx = 0; ty = 0; kick(); });
   });
+=======
+>>>>>>> de8b943471d2f2b481fe9362575f1cb843d496ad
 })();
